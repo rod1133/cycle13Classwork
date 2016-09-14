@@ -17,11 +17,11 @@ def main():
         if choice == 1:
             #convert C to F
             c = eval(input("Please enter Celsius Degree in "))
-            print (str(toFahrenheit(c)))
+            print (str(c) + "C= "+ str(toFahrenheit(c))) +"F= "
         elif choice == 2:
             #convert F to C
             f = eval(input("Please enter Fahrenheit Degree in "))
-            print (str(toCelsius(f)))
+            print (str(f) + "F= " + str(toCelsius(f)) + "C")
         else:
             print ("Invaild Entry")
 
