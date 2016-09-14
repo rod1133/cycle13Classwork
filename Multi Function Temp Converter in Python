@@ -1,0 +1,29 @@
+def menu():
+    print("\n1. Celsius to Fahrenheit ")
+    print("2. Fahrenheit to Celsius ")
+    print("3. Exit")
+    pick = int(input("Enter a Choice: "))
+    return pick
+
+def toCelsius(f):
+    return int ((f-32)/1.8)
+
+def toFahrenheit(c):
+    return int(c * 1.8 + 32)
+
+def main():
+    choice = menu ()
+    while choice != 3:
+        if choice == 1:
+            #convert C to F
+            c = eval(input("Please enter Celsius Degree in "))
+            print (str(toFahrenheit(c)))
+        elif choice == 2:
+            #convert F to C
+            f = eval(input("Please enter Fahrenheit Degree in "))
+            print (str(toCelsius(f)))
+        else:
+            print ("Invaild Entry")
+
+        choice = menu ()
+
